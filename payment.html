@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    
+    <!-- Img icon -->
+    <link rel="icon" href="assets/img/logoIcon.png" />
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./assets/css/payment.css" />
+    <link rel="stylesheet" href="assets/css/mainLayout.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap css v4.1-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <!-- NavBar: -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <div class="container">
+        <a href="/home.html">
+          <img class="img-fluid col-2" src="assets/img/logoIcon.jpg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i id="bar" class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav_link" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="./product.html">Product</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav_link" href="./blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav_link" href="./feature.html">Featured Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="#">Payment</a>
+            </li>
+            <li class="nav-item">
+              <i class="fal fa-search"></i>
+            </li>
+            <li class="nav-item">
+              <a href="./payment.html">
+                <i class="fal fa-shopping-bag active"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="container pt-5 mt-5">
+      <h3 class="font-weight-bold pt-5">Giỏ hàng</h3>
+      <hr />
+    </section>
+
+    <section id="cart-container" class="container my-5">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Xóa</td>
+            <td>Hình ảnh</td>
+            <td>Tên sản phẩm</td>
+            <td>Đơn giá</td>
+            <td>Số lượng</td>
+            <td>Tổng cộng</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Product 1 -->
+          <tr>
+            <td>
+              <a href="">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+
+            <td>
+              <img src="assets/img/shoes/5.jpg" alt="" />
+            </td>
+
+            <td>
+              <h6>Nike</h6>
+            </td>
+
+            <td>
+              <h6>
+                <b>900.000 VND</b>
+              </h6>
+            </td>
+
+            <td>
+              <input class="w-25 pl-1" value="1" min="1" type="number" />
+            </td>
+
+            <td>
+              <h6>
+                <b>900.000 VND</b>
+              </h6>
+            </td>
+          </tr>
+
+          <!-- Product 2 -->
+          <tr>
+            <td>
+              <a href="">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+
+            <td>
+              <img src="assets/img/shop/1.jpg" alt="" />
+            </td>
+
+            <td>
+              <h6>Puma</h6>
+            </td>
+
+            <td>
+              <h6>
+                <b>900.000 VND</b>
+              </h6>
+            </td>
+
+            <td>
+              <input class="w-25 pl-1" value="1" min="1" type="number" />
+            </td>
+
+            <td>
+              <h6>
+                <b>900.000 VND</b>
+              </h6>
+            </td>
+          </tr>
+
+          <!-- Product 3 -->
+          <tr>
+            <td>
+              <a href="">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+
+            <td>
+              <img src="assets/img/watches/2.jpg" alt="" />
+            </td>
+
+            <td>
+              <h6>Converse</h6>
+            </td>
+
+            <td>
+              <h6>
+                <b>900.000 VND</b>
+              </h6>
+            </td>
+
+            <td>
+              <input class="w-25 pl-1" value="1" min="1" type="number" />
+            </td>
+
+            <td>
+              <h6>
+                <b>900.000 VND</b>
+              </h6>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-bottom" class="container">
+      <div class="row">
+        <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+          <div>
+            <h5>Mã giảm giá</h5>
+            <p>Nhập mã giảm giá (nếu có):</p>
+            <input type="text" placeholder="Nhập mã code" />
+            <button>Xác nhận</button>
+          </div>
+        </div>
+
+        <div class="total col-lg-6 col-md-6 col-12">
+          <div>
+            <h5>TỔNG CỘNG</h5>
+            <div class="d-flex justify-content-between">
+              <h6>Subtotal</h6>
+              <p>2,700,000 VND</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6>Giảm giá</h6>
+              <p>500,000 VND</p>
+            </div>
+
+            <hr class="second-hr" />
+            <div class="d-flex justify-content-between">
+              <h6>TOTAL</h6>
+              <p>
+                <b>2,200,000 VND</b>
+              </p>
+            </div>
+
+            <button class="ml-auto">Thanh toán</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-6">
+          <img src="assets/img/logo1.png" alt="" />
+          <p class="pt-3">
+            <bMain>Shoesshop</bMain> là trang TMĐT chuyên mua bán, trao đổi giày dép của các thương hiệu lớn trên toàn thế giới. Website sử dụng HTML, CSS, JS, Bootstrap và JQuery.
+          </p>
+        </div>
+
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Category</h5>
+          <ul class="list-unstyled">
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Feature Product</a></li>
+            <li><a href="">Price</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Contact</h5>
+          <div class="">
+            <h6 class="text-capitalize">Address</h6>
+            <p>279 Nguyen Tri Phuong</p>
+          </div>
+
+          <div class="">
+            <h6 class="text-capitalize">Phone</h6>
+            <p>(+84) 945 785 236</p>
+          </div>
+
+          <div class="">
+            <h6 class="text-capitalize">E-mail</h6>
+            <p>
+              <a href="#"
+                >cs@shoesshop.com.vn</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instagram</h5>
+          <div class="row">
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="assets/img/insta/1.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="assets/img/insta/2.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="assets/img/insta/3.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="assets/img/insta/4.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="assets/img/insta/5.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright mt-5">
+        <div class="row container mx-auto mb-4">
+          <div class="col-lg-3 col-md-6 col-12">
+            <img src="assets/img/payment.png" alt="" />
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+            <p>© 2021 Shoes shop</p>
+          </div>
+
+          <div class="row">
+            <p class="mx-1 ml-4">
+              <a href="#" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </p>
+            <p class="mx-1">
+              <a
+                href="#"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </p>
+            <p class="mx-1">
+              <a href="#" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
